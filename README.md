@@ -1,11 +1,17 @@
-# Contacts SPA
+# Ambiente DOCKER para desenvolvimento php/laravel
+
+* php 8.0.12
+* mysql 5.7
+* nginx
+* node 10
+* mailhog
+* redis
 
 ## Instalação
 
 **Clonar Repositório**
 ```
-git clone https://github.com/nevadskiy/contacts-spa.git
-cd contacts-spa
+git clone git@github.com:daluamon/docker-php-8.git
 ```
 
 **Run the installation script**
@@ -50,4 +56,3 @@ Build assets
 ```
 docker-compose exec node yarn dev
 ```
-# docker-php-8
