@@ -11,7 +11,7 @@ services:
       # Storing logs
       - ./docker/nginx/logs:/var/log/nginx
     ports:
-      - 8080:80
+      - 80:80
     links:
       - php-fpm
 
