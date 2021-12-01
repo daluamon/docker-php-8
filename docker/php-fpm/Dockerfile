@@ -14,6 +14,7 @@ RUN apt-get install -y libzip-dev zip && docker-php-ext-configure zip && docker-
 
 # GD
 RUN apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev
+RUN docker-php-ext-configure gd --with-jpeg=/usr/include/ --with-freetype=/usr/include/
 RUN docker-php-ext-install gd
 
 # Curl
