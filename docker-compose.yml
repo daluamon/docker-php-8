@@ -61,6 +61,18 @@ services:
     ports:
       - 33061:3306
 
+  ### phpmyadmin  ########################
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql
+      - PMA_USER=app
+      - PMA_PASSWORD=app
+
   ### MySQL for testing ########################
   mysql-testing:
     build:
